@@ -55,6 +55,12 @@ public class ActualizarController {
 //		return new HttpEntity<>(headers);
 //		}
 
+	@GetMapping("/ping")
+	public String ping(){
+		return "ActualizarController - ping - HOLA MUNDO";
+	}
+	
+	
 	@GetMapping("/{monto}/{tipo}/{idT}")
 	public String dataActu(@PathVariable(value = "monto") double monto, @PathVariable(value = "tipo") String tipo,
 			@PathVariable(value = "idT") long idT) throws RestClientException, IOException {
