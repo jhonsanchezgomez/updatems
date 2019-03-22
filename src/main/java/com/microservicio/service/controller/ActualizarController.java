@@ -13,7 +13,7 @@ import com.microservicio.service.entity.Tarjeta;
 import com.microservicio.service.entity.Transaccion;
 import com.microservicio.service.jpa.IInfoTDAO;
 import com.microservicio.service.jpa.ITransaccionDAO;
-import com.microservicio.service.servicios.IZuul;
+//import com.microservicio.service.servicios.IZuul;
 
 @RestController
 @RequestMapping("/actualizar_tarjeta")
@@ -26,8 +26,8 @@ public class ActualizarController {
 	@Autowired
 	private IInfoTDAO tDAO;
 
-	@Autowired
-	private IZuul iZuul;
+	//@Autowired
+	//private IZuul iZuul;
 
 	Transaccion t;
 
@@ -72,7 +72,7 @@ public class ActualizarController {
 		//ift = rT.getForObject("http://192.165.30.112:8080/tarjeta/" + idT, Tarjeta.class);
 		//ift = Iact.getTarjeta(idT);
 		// fin
-		ift = iZuul.getTarjeta(idT);
+	//ift = iZuul.getTarjeta(idT);
 		
 		//informacion = iZuul.getTarjeta(idT); seguir......
 		
