@@ -15,7 +15,7 @@ import com.microservicio.service.jpa.ITransaccionDAO;
 import com.microservicio.service.servicios.IZuul;
 
 @RestController
-@RequestMapping("/actualizar_tarjeta")
+@RequestMapping( value = "/actualizar_tarjeta", method= RequestMethod.GET)
 public class ActualizarController {
 
 
