@@ -72,7 +72,11 @@ public class ActualizarController {
 		//ift = rT.getForObject("http://192.165.30.112:8080/tarjeta/" + idT, Tarjeta.class);
 		//ift = Iact.getTarjeta(idT);
 		// fin
+		System.out.println("HOla mundo de");
+		System.out.println("HOla mundo de");
 		ift = iZuul.getTarjeta(idT);
+		System.out.println("HOla mundo");
+		System.out.println("HOla mundo");
 		
 		//informacion = iZuul.getTarjeta(idT); seguir......
 		
