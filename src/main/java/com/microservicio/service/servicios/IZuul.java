@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.microservicio.service.entity.Tarjeta;
 
-//@FeignClient(name = "apiZuul", url = "http://apizuul.netflix.svc:8080")
+@FeignClient(name = "apiZuul", url = "http://apizuul.netflix.svc:8080")
 public interface IZuul {
 	
-	//@RequestMapping(method = RequestMethod.GET, value = "/tarjetacontroller/tarjeta/{id}")
-	//public Tarjeta getTarjeta(@PathVariable (value = "id")long id);
+	@RequestMapping(method = RequestMethod.GET, value = "/tarjetacontroller/tarjeta/{id}")
+	public Tarjeta getTarjeta(@PathVariable (value = "id")long id);
 
 }
