@@ -8,12 +8,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestClientException;
-
 import com.microservicio.service.entity.Tarjeta;
 import com.microservicio.service.entity.Transaccion;
 import com.microservicio.service.jpa.IInfoTDAO;
 import com.microservicio.service.jpa.ITransaccionDAO;
-//import com.microservicio.service.servicios.IZuul;
+import com.microservicio.service.servicios.IZuul;
 
 @RestController
 @RequestMapping("/actualizar_tarjeta")
